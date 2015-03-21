@@ -20,7 +20,6 @@ def history():
     line = line.split(';')
     if len(line) == 2:
       make_cmd(line)
-  print type(cmds)
   return jsonify(cmds or [])
 
 
